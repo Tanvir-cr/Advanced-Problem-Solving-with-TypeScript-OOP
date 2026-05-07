@@ -69,3 +69,13 @@ class Student extends Person {
 }
 const student: Student = new Student("Alice", 20, "A");
 console.log(student.getDetails());
+
+// Problem 7
+function getIntersection<T>(array1: T[], array2: T[]): T[] {
+    return array1.filter((item) => array2.includes(item));
+}
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [3, 4, 5, 6, 7];
+console.log(getIntersection(array1, array2));
+
+// Problem 8
