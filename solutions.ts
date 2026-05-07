@@ -9,3 +9,15 @@ function reverseString(str: string): string {
   return str.split('').reverse().join('');
 }
 console.log(reverseString('typescript'));
+
+// Problem 3
+type StringOrNumber = string | number;
+function checkType(value: StringOrNumber): string {
+  if (typeof value === 'string') {
+    return 'string';
+  } else {
+    return 'number';
+  } 
+}
+console.log(checkType('Hello'));
+console.log(checkType(42));
