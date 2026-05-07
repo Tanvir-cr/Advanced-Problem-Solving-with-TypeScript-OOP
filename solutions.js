@@ -36,3 +36,24 @@ function toggleReadStatus(book) {
 }
 const myBook = { title: "TypeScript Guide", author: "Jane Doe", year: 2024 };
 console.log(toggleReadStatus(myBook));
+// Problem 6
+class Person {
+    name;
+    age;
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+class Student extends Person {
+    grade;
+    constructor(name, age, grade) {
+        super(name, age);
+        this.grade = grade;
+    }
+    getDetails() {
+        return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
+    }
+}
+const student = new Student("Alice", 20, "A");
+console.log(student.getDetails());
